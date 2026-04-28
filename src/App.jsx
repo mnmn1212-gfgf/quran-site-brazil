@@ -1005,7 +1005,7 @@ export default function QuranTranslationLandingPage() {
         dir="ltr"
         className="relative min-h-screen overflow-hidden bg-transparent text-white"
       >
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,209,102,0.18),transparent_30%),radial-gradient(circle_at_78%_18%,rgba(34,211,238,0.18),transparent_28%),radial-gradient(circle_at_18%_82%,rgba(124,58,237,0.22),transparent_31%),radial-gradient(circle_at_50%_55%,rgba(16,185,129,0.14),transparent_34%),linear-gradient(180deg,#050A1C_0%,#071D3C_34%,#092D52_62%,#08142A_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,209,102,0.18),transparent_30%),radial-gradient(circle_at_78%_18%,rgba(34,211,238,0.18),transparent_28%),radial-gradient(circle_at_18%_82%,rgba(124,58,242,0.20),transparent_31%),radial-gradient(circle_at_52%_56%,rgba(23,128,154,0.16),transparent_34%),linear-gradient(135deg,#060D24_0%,#0D2D62_26%,#17809A_52%,#7E3AF2_76%,#FFAD42_100%)]" />
 
         {!isMobile && (
           <>
@@ -1660,7 +1660,7 @@ export default function QuranTranslationLandingPage() {
                       Sana... Uma mensagem para todos os mundos
                     </div>
 
-                    <p className="mx-auto mt-4 max-w-xl rounded-[1.4rem] border border-[#FFD166]/20 bg-[linear-gradient(135deg,rgba(3,18,31,0.90)_0%,rgba(6,72,70,0.72)_58%,rgba(159,121,34,0.42)_100%)] px-4 py-4 text-sm leading-7 text-white/90 sm:px-5 sm:text-base sm:leading-8">
+                    <p className="mx-auto mt-4 max-w-xl rounded-[1.4rem] border border-[#FFD166]/20 bg-[linear-gradient(135deg,rgba(6,13,36,0.92)_0%,rgba(13,45,98,0.82)_34%,rgba(23,128,154,0.66)_62%,rgba(126,58,242,0.52)_82%,rgba(255,173,66,0.34)_100%)] px-4 py-4 text-sm leading-7 text-white/90 sm:px-5 sm:text-base sm:leading-8">
                       Canais de áudio e vídeo para traduções dos significados do Alcorão
                       em todos os idiomas globais, como um projeto waqf que combina
                       beleza na apresentação, precisão do significado e sinceridade
