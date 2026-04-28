@@ -66,6 +66,8 @@ const glass =
   "border border-white/10 bg-white/10 md:backdrop-blur-xl backdrop-blur-sm shadow-[0_8px_22px_rgba(0,0,0,0.14)]";
 const softCard = `rounded-[2rem] border border-white/10 ${OUTER_GRADIENT} md:backdrop-blur-xl backdrop-blur-sm shadow-[0_10px_28px_rgba(5,12,32,0.26)]`;
 const gradientOuterCard = `rounded-[2rem] border border-white/10 ${OUTER_GRADIENT} md:backdrop-blur-xl backdrop-blur-sm shadow-[0_10px_28px_rgba(5,12,32,0.26)]`;
+const contactFrame =
+  "rounded-[2rem] border border-white/10 bg-[linear-gradient(135deg,rgba(6,13,36,0.98)_0%,rgba(13,45,98,0.96)_28%,rgba(23,128,154,0.88)_54%,rgba(126,58,242,0.72)_78%,rgba(255,173,66,0.46)_100%)] md:backdrop-blur-xl backdrop-blur-sm shadow-[0_10px_28px_rgba(5,12,32,0.30)]";
 
 const navItems = [
   { label: "Sobre Nós", href: "#about" },
@@ -1005,7 +1007,7 @@ export default function QuranTranslationLandingPage() {
         dir="ltr"
         className="relative min-h-screen overflow-hidden bg-transparent text-white"
       >
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,209,102,0.10),transparent_24%),radial-gradient(circle_at_78%_18%,rgba(0,140,255,0.18),transparent_24%),radial-gradient(circle_at_18%_82%,rgba(88,28,255,0.20),transparent_28%),radial-gradient(circle_at_52%_56%,rgba(0,210,255,0.14),transparent_30%),linear-gradient(135deg,#020817_0%,#03122F_20%,#052A5C_46%,#0A4B7A_68%,#1D4ED8_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,209,102,0.18),transparent_30%),radial-gradient(circle_at_78%_18%,rgba(34,211,238,0.18),transparent_28%),radial-gradient(circle_at_18%_82%,rgba(124,58,242,0.20),transparent_31%),radial-gradient(circle_at_52%_56%,rgba(23,128,154,0.16),transparent_34%),linear-gradient(135deg,#060D24_0%,#0D2D62_26%,#17809A_52%,#7E3AF2_76%,#FFAD42_100%)]" />
 
         {!isMobile && (
           <>
@@ -1602,9 +1604,9 @@ export default function QuranTranslationLandingPage() {
               </div>
 
               <div
-                className={`mt-8 rounded-[2rem] p-4 sm:p-6 md:p-8 ${gradientOuterCard}`}
+                className={`mt-8 p-4 sm:p-6 md:p-8 ${contactFrame}`}
               >
-                <div className="rounded-[2rem] border border-white/10 bg-[rgba(3,24,34,0.70)] p-4 sm:p-6">
+                <div className="rounded-[2rem] border border-white/10 bg-[rgba(3,24,34,0.78)] p-4 sm:p-6">
                   <div className="rounded-[1.5rem] border border-white/10 bg-white/5 p-4 sm:p-5">
                     <div className="mb-4 text-xl font-bold sm:text-2xl">
                       Entre em contato
