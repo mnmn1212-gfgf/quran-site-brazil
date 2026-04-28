@@ -43,7 +43,7 @@ const OUTER_GRADIENT =
 const INNER_GRADIENT =
   "bg-[linear-gradient(135deg,rgba(5,10,28,0.98)_0%,rgba(9,34,78,0.96)_34%,rgba(12,104,125,0.90)_62%,rgba(85,48,180,0.84)_82%,rgba(224,135,44,0.72)_100%)]";
 const HEADER_GRADIENT =
-  "border border-white/12 bg-[linear-gradient(120deg,rgba(7,17,48,0.92)_0%,rgba(13,62,122,0.88)_34%,rgba(18,126,146,0.82)_64%,rgba(255,177,66,0.64)_100%)] md:backdrop-blur-xl backdrop-blur-sm shadow-[0_12px_34px_rgba(5,12,32,0.34)]";
+  "bg-[linear-gradient(135deg,rgba(6,13,36,0.98)_0%,rgba(13,45,98,0.96)_26%,rgba(23,128,154,0.92)_52%,rgba(126,58,242,0.88)_76%,rgba(255,173,66,0.84)_100%)] md:backdrop-blur-xl backdrop-blur-sm shadow-[0_10px_28px_rgba(5,12,32,0.26)]";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -1028,7 +1028,7 @@ export default function QuranTranslationLandingPage() {
               className={`mx-auto flex items-center justify-between gap-3 rounded-[1.5rem] px-3 py-3 sm:rounded-[2rem] sm:px-4 ${HEADER_GRADIENT}`}
             >
               <div className="flex min-w-0 items-center gap-3 sm:gap-4">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-full border border-[#FFD166]/20 bg-white/10 shadow-[0_0_16px_rgba(255,209,102,0.10)] sm:h-16 sm:w-16">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white/10 shadow-[0_0_16px_rgba(255,209,102,0.10)] sm:h-16 sm:w-16">
                   <img
                     src={sanaLogo}
                     alt="Logotipo dos Canais Corânicos Sana"
@@ -1047,7 +1047,7 @@ export default function QuranTranslationLandingPage() {
                   <a
                     key={item.href}
                     href={item.href}
-                    className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white/85 transition hover:border-[#FFD166]/30 hover:bg-white/10 hover:text-[#FFF4C2]"
+                    className="rounded-full bg-white/5 px-4 py-2 text-sm font-medium text-white/85 transition hover:bg-white/10 hover:text-[#FFF4C2]"
                   >
                     {item.label}
                   </a>
