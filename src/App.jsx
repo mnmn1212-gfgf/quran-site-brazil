@@ -1604,8 +1604,8 @@ export default function QuranTranslationLandingPage() {
               <div
                 className={`mt-8 rounded-[2rem] p-4 sm:p-6 md:p-8 ${gradientOuterCard}`}
               >
-                <div className="rounded-[2rem] border border-white/10 bg-[rgba(3,24,34,0.70)] p-4 sm:p-6">
-                  <div className="rounded-[1.5rem] border border-white/10 bg-white/5 p-4 sm:p-5">
+                <div className={`rounded-[2rem] border border-white/10 p-4 sm:p-6 ${INNER_GRADIENT}`}>
+                  <div className="rounded-[1.5rem] border border-white/10 bg-[rgba(255,255,255,0.06)] p-4 sm:p-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
                     <div className="mb-4 text-xl font-bold sm:text-2xl">
                       Entre em contato
                     </div>
