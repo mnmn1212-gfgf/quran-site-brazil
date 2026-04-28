@@ -39,11 +39,11 @@ const ACCENT = "#FFD166";
 const CTA_DARK = "#07111F";
 
 const OUTER_GRADIENT =
-  "bg-[linear-gradient(135deg,rgba(6,13,36,0.98)_0%,rgba(13,45,98,0.96)_26%,rgba(23,128,154,0.92)_52%,rgba(126,58,242,0.88)_76%,rgba(255,173,66,0.84)_100%)]";
+  "bg-[linear-gradient(135deg,rgba(2,7,20,1)_0%,rgba(7,24,58,0.99)_26%,rgba(10,74,96,0.95)_52%,rgba(58,26,122,0.92)_76%,rgba(166,96,28,0.88)_100%)]";
 const INNER_GRADIENT =
-  "bg-[linear-gradient(135deg,rgba(5,10,28,0.98)_0%,rgba(9,34,78,0.96)_34%,rgba(12,104,125,0.90)_62%,rgba(85,48,180,0.84)_82%,rgba(224,135,44,0.72)_100%)]";
+  "bg-[linear-gradient(135deg,rgba(1,5,18,1)_0%,rgba(6,20,52,0.99)_34%,rgba(8,66,86,0.96)_62%,rgba(48,28,108,0.92)_82%,rgba(145,86,24,0.86)_100%)]";
 const HEADER_GRADIENT =
-  "bg-[linear-gradient(135deg,rgba(6,13,36,0.98)_0%,rgba(13,45,98,0.96)_26%,rgba(23,128,154,0.92)_52%,rgba(126,58,242,0.88)_76%,rgba(255,173,66,0.84)_100%)] md:backdrop-blur-xl backdrop-blur-sm shadow-[0_10px_28px_rgba(5,12,32,0.26)]";
+  "bg-[linear-gradient(135deg,rgba(2,7,20,1)_0%,rgba(7,24,58,0.99)_26%,rgba(10,74,96,0.95)_52%,rgba(58,26,122,0.92)_76%,rgba(166,96,28,0.88)_100%)] md:backdrop-blur-xl backdrop-blur-sm shadow-[0_14px_34px_rgba(0,0,0,0.42)]";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -1005,7 +1005,7 @@ export default function QuranTranslationLandingPage() {
         dir="ltr"
         className="relative min-h-screen overflow-hidden bg-transparent text-white"
       >
-        <div className={`absolute inset-0 ${OUTER_GRADIENT}`} />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(90,49,12,0.10),transparent_30%),radial-gradient(circle_at_78%_18%,rgba(8,31,74,0.18),transparent_28%),radial-gradient(circle_at_18%_82%,rgba(36,17,78,0.20),transparent_31%),radial-gradient(circle_at_52%_56%,rgba(10,47,74,0.18),transparent_34%),linear-gradient(135deg,#050A1C_0%,#08142E_26%,#0A2F4A_52%,#24114E_76%,#5A310C_100%)]" />
 
         {!isMobile && (
           <>
