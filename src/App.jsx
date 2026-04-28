@@ -35,13 +35,15 @@ import {
   Volume2,
 } from "lucide-react";
 
-const ACCENT = "#D9B85F";
-const CTA_DARK = "#06131F";
+const ACCENT = "#FFD166";
+const CTA_DARK = "#07111F";
 
 const OUTER_GRADIENT =
-  "bg-[linear-gradient(135deg,rgba(3,18,31,0.98)_0%,rgba(5,42,55,0.95)_34%,rgba(7,84,80,0.92)_68%,rgba(183,143,48,0.82)_100%)]";
+  "bg-[linear-gradient(135deg,rgba(6,13,36,0.98)_0%,rgba(13,45,98,0.96)_26%,rgba(23,128,154,0.92)_52%,rgba(126,58,242,0.88)_76%,rgba(255,173,66,0.84)_100%)]";
 const INNER_GRADIENT =
-  "bg-[linear-gradient(135deg,rgba(2,10,18,0.98)_0%,rgba(4,33,48,0.95)_42%,rgba(6,72,70,0.90)_72%,rgba(159,121,34,0.76)_100%)]";
+  "bg-[linear-gradient(135deg,rgba(5,10,28,0.98)_0%,rgba(9,34,78,0.96)_34%,rgba(12,104,125,0.90)_62%,rgba(85,48,180,0.84)_82%,rgba(224,135,44,0.72)_100%)]";
+const HEADER_GRADIENT =
+  "border border-white/12 bg-[linear-gradient(120deg,rgba(7,17,48,0.92)_0%,rgba(13,62,122,0.88)_34%,rgba(18,126,146,0.82)_64%,rgba(255,177,66,0.64)_100%)] md:backdrop-blur-xl backdrop-blur-sm shadow-[0_12px_34px_rgba(5,12,32,0.34)]";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -62,8 +64,8 @@ const containerClass =
   "relative z-10 mx-auto w-full max-w-[1680px] px-4 sm:px-6 lg:px-10 xl:px-14";
 const glass =
   "border border-white/10 bg-white/10 md:backdrop-blur-xl backdrop-blur-sm shadow-[0_8px_22px_rgba(0,0,0,0.14)]";
-const softCard = `rounded-[2rem] ${glass}`;
-const gradientOuterCard = `rounded-[2rem] border border-white/10 ${OUTER_GRADIENT} md:backdrop-blur-xl backdrop-blur-sm shadow-[0_8px_22px_rgba(0,0,0,0.14)]`;
+const softCard = `rounded-[2rem] border border-white/10 ${OUTER_GRADIENT} md:backdrop-blur-xl backdrop-blur-sm shadow-[0_10px_28px_rgba(5,12,32,0.26)]`;
+const gradientOuterCard = `rounded-[2rem] border border-white/10 ${OUTER_GRADIENT} md:backdrop-blur-xl backdrop-blur-sm shadow-[0_10px_28px_rgba(5,12,32,0.26)]`;
 
 const navItems = [
   { label: "Sobre Nós", href: "#about" },
@@ -575,7 +577,7 @@ function HeroAudioPlayer({ isMobile }) {
             key={index}
             animate={{ height }}
             transition={{ duration: isMobile ? 0.2 : 0.14, ease: "easeOut" }}
-            className="flex-1 self-end rounded-full bg-gradient-to-t from-[#D9B85F] via-[#D9F8F2] to-[#0F766E] opacity-95"
+            className="flex-1 self-end rounded-full bg-gradient-to-t from-[#FFD166] via-[#22D3EE] to-[#7C3AED] opacity-95"
             style={{ maxHeight: `${MAX_BAR_HEIGHT}px` }}
           />
         ))}
@@ -640,7 +642,7 @@ function HeroAudioPlayer({ isMobile }) {
 
         <div className="relative h-2 w-full flex-1 overflow-visible rounded-full bg-white/10">
           <div
-            className="absolute inset-y-0 left-0 rounded-full bg-gradient-to-r from-[#D9B85F] via-[#D9F8F2] to-[#0F766E]"
+            className="absolute inset-y-0 left-0 rounded-full bg-gradient-to-r from-[#FFD166] via-[#22D3EE] to-[#7C3AED]"
             style={{ width: `${progress}%` }}
           />
           <input
@@ -690,7 +692,7 @@ function StructuredCard({ icon: Icon, title, desc, isMobile }) {
     >
       <div className="h-full rounded-[1.5rem] border border-white/10 bg-white/5 p-4">
         <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-gradient-to-l from-white/5 to-white/10 px-4 py-3">
-          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-[#D9B85F]/10">
+          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-[#FFD166]/10">
             <Icon className="h-5 w-5" style={{ color: ACCENT }} />
           </div>
           <h3 className="text-base font-bold leading-7 text-white sm:text-lg lg:text-xl">
@@ -713,7 +715,7 @@ function IdentityCard({ icon: Icon, title, text, large = false, isMobile }) {
     >
       <div className="h-full rounded-[1.5rem] border border-white/10 bg-white/5 p-4">
         <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-gradient-to-l from-white/5 to-white/10 px-4 py-3">
-          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-[#D9B85F]/10">
+          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-[#FFD166]/10">
             <Icon className="h-5 w-5" style={{ color: ACCENT }} />
           </div>
           <div
@@ -746,7 +748,7 @@ function ImpactCard({ icon: Icon, title, desc, isMobile }) {
     >
       <div className="h-full rounded-[1.5rem] border border-white/10 bg-white/5 p-4">
         <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-gradient-to-l from-white/5 to-white/10 px-4 py-3">
-          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-[#D9B85F]/10">
+          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-[#FFD166]/10">
             <Icon className="h-5 w-5" style={{ color: ACCENT }} />
           </div>
           <h3 className="text-base font-bold text-white sm:text-lg lg:text-xl">
@@ -898,7 +900,7 @@ function ProtectedHlsVideoCard({ video, index, isMobile }) {
             className="absolute inset-0 flex items-center justify-center bg-black/15 transition hover:bg-black/10"
             aria-label="Reproduzir vídeo"
           >
-            <span className="flex h-16 w-16 items-center justify-center rounded-full border border-white/20 bg-white/10 backdrop-blur-md shadow-[0_0_28px_rgba(217,184,95,0.14)] sm:h-18 sm:w-18">
+            <span className="flex h-16 w-16 items-center justify-center rounded-full border border-white/20 bg-white/10 backdrop-blur-md shadow-[0_0_28px_rgba(255,209,102,0.14)] sm:h-18 sm:w-18">
               <Play className="ml-1 h-7 w-7 text-white" />
             </span>
           </button>
@@ -951,7 +953,7 @@ function ProtectedHlsVideoCard({ video, index, isMobile }) {
 
           <div className="relative h-2 w-full flex-1 overflow-visible rounded-full bg-white/10">
             <div
-              className="absolute inset-y-0 left-0 rounded-full bg-gradient-to-r from-[#D9B85F] via-[#D9F8F2] to-[#0F766E]"
+              className="absolute inset-y-0 left-0 rounded-full bg-gradient-to-r from-[#FFD166] via-[#22D3EE] to-[#7C3AED]"
               style={{ width: `${progress}%` }}
             />
             <input
@@ -1003,16 +1005,16 @@ export default function QuranTranslationLandingPage() {
         dir="ltr"
         className="relative min-h-screen overflow-hidden bg-transparent text-white"
       >
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(217,184,95,0.16),transparent_30%),radial-gradient(circle_at_78%_18%,rgba(20,184,166,0.18),transparent_28%),radial-gradient(circle_at_18%_82%,rgba(6,95,84,0.26),transparent_30%),linear-gradient(180deg,#020A12_0%,#061A2A_38%,#042D34_72%,#021014_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,209,102,0.18),transparent_30%),radial-gradient(circle_at_78%_18%,rgba(34,211,238,0.18),transparent_28%),radial-gradient(circle_at_18%_82%,rgba(124,58,237,0.22),transparent_31%),radial-gradient(circle_at_50%_55%,rgba(16,185,129,0.14),transparent_34%),linear-gradient(180deg,#050A1C_0%,#071D3C_34%,#092D52_62%,#08142A_100%)]" />
 
         {!isMobile && (
           <>
             <motion.div
-              className="absolute -top-24 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-[#D9B85F]/12 blur-3xl"
+              className="absolute -top-24 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-[#FFD166]/14 blur-3xl"
               animate={pulseGlow}
             />
             <div className="absolute inset-0 opacity-[0.06]">
-              <div className="h-full w-full bg-[linear-gradient(rgba(217,248,242,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(217,248,242,0.08)_1px,transparent_1px)] bg-[size:44px_44px]" />
+              <div className="h-full w-full bg-[linear-gradient(rgba(103,232,249,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(103,232,249,0.08)_1px,transparent_1px)] bg-[size:44px_44px]" />
             </div>
           </>
         )}
@@ -1023,10 +1025,10 @@ export default function QuranTranslationLandingPage() {
               initial="hidden"
               animate="show"
               variants={fadeUp}
-              className={`mx-auto flex items-center justify-between gap-3 rounded-[1.5rem] px-3 py-3 sm:rounded-[2rem] sm:px-4 ${glass}`}
+              className={`mx-auto flex items-center justify-between gap-3 rounded-[1.5rem] px-3 py-3 sm:rounded-[2rem] sm:px-4 ${HEADER_GRADIENT}`}
             >
               <div className="flex min-w-0 items-center gap-3 sm:gap-4">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-full border border-[#D9B85F]/20 bg-white/10 shadow-[0_0_16px_rgba(217,184,95,0.10)] sm:h-16 sm:w-16">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-full border border-[#FFD166]/20 bg-white/10 shadow-[0_0_16px_rgba(255,209,102,0.10)] sm:h-16 sm:w-16">
                   <img
                     src={sanaLogo}
                     alt="Logotipo dos Canais Corânicos Sana"
@@ -1045,7 +1047,7 @@ export default function QuranTranslationLandingPage() {
                   <a
                     key={item.href}
                     href={item.href}
-                    className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white/85 transition hover:border-[#D9B85F]/30 hover:bg-white/10 hover:text-[#FFF2C7]"
+                    className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white/85 transition hover:border-[#FFD166]/30 hover:bg-white/10 hover:text-[#FFF4C2]"
                   >
                     {item.label}
                   </a>
@@ -1063,7 +1065,7 @@ export default function QuranTranslationLandingPage() {
 
             {menuOpen && (
               <div
-                className={`mt-3 rounded-[1.4rem] p-3 md:hidden sm:rounded-[1.6rem] sm:p-4 ${glass}`}
+                className={`mt-3 rounded-[1.4rem] p-3 md:hidden sm:rounded-[1.6rem] sm:p-4 ${HEADER_GRADIENT}`}
               >
                 <div className="grid gap-2">
                   {navItems.map((item) => (
@@ -1088,7 +1090,7 @@ export default function QuranTranslationLandingPage() {
                 initial="hidden"
                 animate="show"
                 variants={fadeUp}
-                className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#D9B85F]/20 bg-white/10 px-4 py-2 text-xs backdrop-blur-md sm:text-sm"
+                className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#FFD166]/20 bg-white/10 px-4 py-2 text-xs backdrop-blur-md sm:text-sm"
                 style={{ color: ACCENT }}
               >
                 <Stars className="h-4 w-4" style={{ color: ACCENT }} />
@@ -1102,7 +1104,7 @@ export default function QuranTranslationLandingPage() {
                 variants={fadeUp}
                 className="text-3xl font-black leading-[1.25] sm:text-5xl lg:text-7xl"
               >
-                <span className="block bg-gradient-to-l from-[#FFF2C7] via-[#D9F8F2] to-[#0F766E] bg-clip-text text-transparent">
+                <span className="block bg-gradient-to-l from-[#FFF4C2] via-[#67E8F9] to-[#A78BFA] bg-clip-text text-transparent">
                   Canais Corânicos Sana
                 </span>
               </motion.h1>
@@ -1130,7 +1132,7 @@ export default function QuranTranslationLandingPage() {
                   className="group inline-flex items-center justify-center gap-3 rounded-2xl border px-6 py-3.5 text-sm font-bold shadow-[0_8px_20px_rgba(2,10,18,0.24)] transition hover:scale-[1.02] sm:px-7 sm:py-4 sm:text-base"
                   style={{
                     backgroundColor: CTA_DARK,
-                    borderColor: "rgba(217,184,95,0.24)",
+                    borderColor: "rgba(255,209,102,0.24)",
                     color: ACCENT,
                   }}
                 >
@@ -1145,7 +1147,7 @@ export default function QuranTranslationLandingPage() {
                   href="https://www.youtube.com/@SANA-Eng-s2u"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center justify-center gap-3 rounded-2xl border border-white/15 bg-white/10 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur-md transition hover:border-[#D9B85F]/20 hover:bg-white/15 sm:px-7 sm:py-4 sm:text-base"
+                  className="inline-flex items-center justify-center gap-3 rounded-2xl border border-white/15 bg-white/10 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur-md transition hover:border-[#FFD166]/20 hover:bg-white/15 sm:px-7 sm:py-4 sm:text-base"
                 >
                   <Play className="h-5 w-5" />
                   Visite nosso canal
@@ -1213,14 +1215,14 @@ export default function QuranTranslationLandingPage() {
                         O Alcorão em português do Brasil
                       </h3>
                     </div>
-                    <div className="w-fit rounded-2xl border border-[#D9B85F]/25 bg-[#D9B85F]/12 px-4 py-2 text-xs text-[#FFF2C7] sm:text-sm">
+                    <div className="w-fit rounded-2xl border border-[#FFD166]/25 bg-[#FFD166]/12 px-4 py-2 text-xs text-[#FFF4C2] sm:text-sm">
                       Transmissão ao vivo
                     </div>
                   </div>
 
                   <div className="mt-6 rounded-[1.4rem] border border-white/10 bg-[rgba(3,24,34,0.70)] p-4 sm:mt-8 sm:p-6">
                     <div className="mb-4 flex items-start gap-3 text-sm text-white/80 sm:items-center sm:text-base">
-                      <Headphones className="mt-0.5 h-5 w-5 shrink-0 text-[#D9B85F] sm:mt-0" />
+                      <Headphones className="mt-0.5 h-5 w-5 shrink-0 text-[#FFD166] sm:mt-0" />
                       <span>
                         Ouça a recitação com uma exibição visual dos significados
                         do Alcorão
@@ -1240,7 +1242,7 @@ export default function QuranTranslationLandingPage() {
                               repeat: Infinity,
                               ease: "easeInOut",
                             }}
-                            className="h-3 rounded-full bg-gradient-to-r from-[#D9B85F] via-[#D9F8F2] to-[#0F766E]"
+                            className="h-3 rounded-full bg-gradient-to-r from-[#FFD166] via-[#22D3EE] to-[#7C3AED]"
                           />
                         ))}
                       </div>
@@ -1351,7 +1353,7 @@ export default function QuranTranslationLandingPage() {
               className={`relative overflow-hidden p-5 sm:p-6 md:p-10 ${gradientOuterCard}`}
             >
               {!isMobile && (
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(217,184,95,0.08),transparent_28%),radial-gradient(circle_at_80%_80%,rgba(217,248,242,0.06),transparent_32%)]" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(255,209,102,0.08),transparent_28%),radial-gradient(circle_at_80%_80%,rgba(103,232,249,0.08),transparent_32%)]" />
               )}
 
               <div className="relative z-10">
@@ -1391,7 +1393,7 @@ export default function QuranTranslationLandingPage() {
                         href="https://jascomediacity.net/"
                         target="_blank"
                         rel="noreferrer"
-                        className="mt-5 inline-flex w-fit items-center gap-2 rounded-2xl border border-[#D9B85F]/25 bg-[#D9B85F]/10 px-5 py-3 text-sm text-[#FFF2C7] transition hover:bg-[#D9B85F]/18 sm:text-base"
+                        className="mt-5 inline-flex w-fit items-center gap-2 rounded-2xl border border-[#FFD166]/25 bg-[#FFD166]/10 px-5 py-3 text-sm text-[#FFF4C2] transition hover:bg-[#FFD166]/18 sm:text-base"
                       >
                         Visitar o site da Jasco
                         <ExternalLink className="h-4 w-4" />
@@ -1614,7 +1616,7 @@ export default function QuranTranslationLandingPage() {
                       </div>
                       <a
                         href="mailto:snachannel159@gmail.com"
-                        className="flex items-center justify-center gap-3 rounded-2xl border border-[#D9B85F]/25 bg-[#D9B85F]/10 px-4 py-3 text-center text-sm font-semibold text-[#FFF2C7] transition hover:bg-[#D9B85F]/18 sm:text-base"
+                        className="flex items-center justify-center gap-3 rounded-2xl border border-[#FFD166]/25 bg-[#FFD166]/10 px-4 py-3 text-center text-sm font-semibold text-[#FFF4C2] transition hover:bg-[#FFD166]/18 sm:text-base"
                       >
                         <Mail className="h-4 w-4" style={{ color: ACCENT }} />
                         Enviar e-mail
@@ -1628,14 +1630,14 @@ export default function QuranTranslationLandingPage() {
 
           <footer className="pb-8 pt-4 sm:pb-10">
             <div
-              className={`rounded-[2rem] px-4 py-6 sm:px-6 sm:py-8 lg:px-10 ${glass}`}
+              className={`rounded-[2rem] px-4 py-6 sm:px-6 sm:py-8 lg:px-10 ${gradientOuterCard}`}
             >
               <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr_1fr]">
                 <div
                   className={`rounded-[1.8rem] border border-white/10 p-4 text-center sm:p-6 ${INNER_GRADIENT}`}
                 >
                   <div className="flex h-full min-h-[420px] flex-col items-center justify-center">
-                    <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full border border-white/15 bg-white/10 shadow-[0_0_18px_rgba(217,248,242,0.08)] backdrop-blur-md sm:h-24 sm:w-24">
+                    <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full border border-white/15 bg-white/10 shadow-[0_0_18px_rgba(103,232,249,0.08)] backdrop-blur-md sm:h-24 sm:w-24">
                       <img
                         src={sanaLogo}
                         alt="Logotipo da Sana"
@@ -1658,7 +1660,7 @@ export default function QuranTranslationLandingPage() {
                       Sana... Uma mensagem para todos os mundos
                     </div>
 
-                    <p className="mx-auto mt-4 max-w-xl rounded-[1.4rem] border border-[#D9B85F]/20 bg-[linear-gradient(135deg,rgba(3,18,31,0.90)_0%,rgba(6,72,70,0.72)_58%,rgba(159,121,34,0.42)_100%)] px-4 py-4 text-sm leading-7 text-white/90 sm:px-5 sm:text-base sm:leading-8">
+                    <p className="mx-auto mt-4 max-w-xl rounded-[1.4rem] border border-[#FFD166]/20 bg-[linear-gradient(135deg,rgba(3,18,31,0.90)_0%,rgba(6,72,70,0.72)_58%,rgba(159,121,34,0.42)_100%)] px-4 py-4 text-sm leading-7 text-white/90 sm:px-5 sm:text-base sm:leading-8">
                       Canais de áudio e vídeo para traduções dos significados do Alcorão
                       em todos os idiomas globais, como um projeto waqf que combina
                       beleza na apresentação, precisão do significado e sinceridade
@@ -1669,7 +1671,7 @@ export default function QuranTranslationLandingPage() {
 
                 <div className="rounded-[1.6rem] border border-white/10 bg-white/5 p-4 sm:p-5 text-center flex h-full flex-col items-center justify-center">
                   <div className="mb-5 flex flex-col items-center justify-center gap-3 text-white">
-                    <div className="relative flex h-16 w-16 items-center justify-center rounded-[1.35rem] border border-[#D9B85F]/20 bg-[linear-gradient(135deg,rgba(217,184,95,0.14)_0%,rgba(255,255,255,0.08)_100%)] shadow-[0_0_24px_rgba(217,184,95,0.12)] backdrop-blur-md">
+                    <div className="relative flex h-16 w-16 items-center justify-center rounded-[1.35rem] border border-[#FFD166]/20 bg-[linear-gradient(135deg,rgba(255,209,102,0.14)_0%,rgba(255,255,255,0.08)_100%)] shadow-[0_0_24px_rgba(255,209,102,0.12)] backdrop-blur-md">
                       <MessageCircle
                         className="relative z-10 h-7 w-7 sm:h-8 sm:w-8"
                         style={{ color: ACCENT }}
@@ -1720,7 +1722,7 @@ export default function QuranTranslationLandingPage() {
 
                 <div className="rounded-[1.8rem] border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.08),rgba(255,255,255,0.04))] p-4 backdrop-blur-md sm:p-5 text-center flex h-full flex-col items-center justify-center">
                   <div className="mb-5 flex flex-col items-center justify-center gap-3 text-white">
-                    <div className="relative flex h-16 w-16 items-center justify-center rounded-[1.35rem] border border-[#D9B85F]/20 bg-[linear-gradient(135deg,rgba(217,184,95,0.14)_0%,rgba(255,255,255,0.08)_100%)] shadow-[0_0_24px_rgba(217,184,95,0.12)] backdrop-blur-md">
+                    <div className="relative flex h-16 w-16 items-center justify-center rounded-[1.35rem] border border-[#FFD166]/20 bg-[linear-gradient(135deg,rgba(255,209,102,0.14)_0%,rgba(255,255,255,0.08)_100%)] shadow-[0_0_24px_rgba(255,209,102,0.12)] backdrop-blur-md">
                       <Link2
                         className="relative z-10 h-7 w-7 sm:h-8 sm:w-8"
                         style={{ color: ACCENT }}
@@ -1745,7 +1747,7 @@ export default function QuranTranslationLandingPage() {
                         className="group rounded-[1.3rem] border border-white/10 bg-white/5 p-4 transition hover:-translate-y-0.5 hover:bg-white/10"
                       >
                         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:justify-center">
-                          <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-[#D9B85F]/10 text-white">
+                          <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-[#FFD166]/10 text-white">
                             <GoogleReproduzirIcon />
                           </div>
                           <span className="whitespace-nowrap text-sm font-bold text-white sm:text-base">
@@ -1761,7 +1763,7 @@ export default function QuranTranslationLandingPage() {
                         className="group rounded-[1.3rem] border border-white/10 bg-white/5 p-4 transition hover:-translate-y-0.5 hover:bg-white/10"
                       >
                         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:justify-center">
-                          <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-[#D9B85F]/10 text-white">
+                          <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-[#FFD166]/10 text-white">
                             <AppStoreIcon />
                           </div>
                           <span className="text-sm font-bold text-white sm:text-base">
@@ -1786,7 +1788,7 @@ export default function QuranTranslationLandingPage() {
                         href="https://www.youtube.com/@SANA-Eng-s2u"
                         target="_blank"
                         rel="noreferrer"
-                        className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl border border-[#D9B85F]/25 bg-[#D9B85F]/10 py-3 text-sm font-bold text-[#FFF2C7] transition hover:scale-[1.01] hover:bg-[#D9B85F]/18"
+                        className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl border border-[#FFD166]/25 bg-[#FFD166]/10 py-3 text-sm font-bold text-[#FFF4C2] transition hover:scale-[1.01] hover:bg-[#FFD166]/18"
                       >
                         <Sparkles className="h-4 w-4" />
                         Começar agora
