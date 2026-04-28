@@ -1005,7 +1005,7 @@ export default function QuranTranslationLandingPage() {
         dir="ltr"
         className="relative min-h-screen overflow-hidden bg-transparent text-white"
       >
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(170,105,24,0.16),transparent_30%),radial-gradient(circle_at_78%_18%,rgba(10,82,105,0.22),transparent_28%),radial-gradient(circle_at_18%_82%,rgba(54,22,118,0.24),transparent_31%),radial-gradient(circle_at_52%_56%,rgba(7,76,92,0.22),transparent_34%),linear-gradient(135deg,#020614_0%,#061735_26%,#0B4A5A_52%,#35156F_76%,#8A4B12_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(170,105,24,0.16),transparent_30%),radial-gradient(circle_at_78%_18%,rgba(10,82,105,0.22),transparent_28%),radial-gradient(circle_at_18%_82%,rgba(54,22,118,0.24),transparent_31%),radial-gradient(circle_at_52%_56%,rgba(7,76,92,0.22),transparent_34%),linear-gradient(135deg,#07112a_0%,#061735_26%,#0B4A5A_52%,#35156F_76%,#8A4B12_100%)]" />
 
         {!isMobile && (
           <>
